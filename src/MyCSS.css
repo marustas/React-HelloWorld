@@ -1,0 +1,10 @@
+h1 {
+    background-color: red;
+}
+
+h1,
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
