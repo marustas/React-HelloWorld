@@ -12,7 +12,8 @@ class App extends React.Component {
         super()
         this.state = {
             robots: [],
-            searchfield: ''
+            searchfield1: '',
+            searchfield2: ''
         }
     }
 componentDidMount(){
@@ -21,13 +22,13 @@ componentDidMount(){
     .then(users=>this.setState({robots: users }))
 }
 onSearchChange = (event) => {
-    this.setState({searchfield: event.target.value})
+    this.setState({searchfield1: event.target.value, searchfield2: event.target.value})
 }
     render () {
-        const {robots, searchfield} = this.state;
+        const {robots, searchfield1, searchfield2} = this.state;
         const filteredRobots = robots.filter(robot => {
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase()) ||
-            robot.email.toLowerCase().includes(searchfield.toLowerCase())
+            return robot.name.toLowerCase().includes(searchfield1.toLowerCase()) ||
+            robot.email.toLowerCase().includes(searchfield2.toLowerCase())
                 })
                 return !robots.length ? 
                 <h1>Loading</h1> :
