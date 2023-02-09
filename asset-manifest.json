@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React-HelloWorld/static/css/main.d072346e.css",
-    "main.js": "/React-HelloWorld/static/js/main.2dc82171.js",
+    "main.js": "/React-HelloWorld/static/js/main.83c93fb6.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-HelloWorld/static/js/787.28cb0dcd.chunk.js",
     "static/media/SEGA.woff": "/React-HelloWorld/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/React-HelloWorld/index.html",
     "main.d072346e.css.map": "/React-HelloWorld/static/css/main.d072346e.css.map",
-    "main.2dc82171.js.map": "/React-HelloWorld/static/js/main.2dc82171.js.map",
+    "main.83c93fb6.js.map": "/React-HelloWorld/static/js/main.83c93fb6.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-HelloWorld/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d072346e.css",
-    "static/js/main.2dc82171.js"
+    "static/js/main.83c93fb6.js"
   ]
 }
