@@ -1,0 +1,14 @@
+.Card {
+    margin: 10px;
+    background-color: #4A1915;
+    border-radius: 17px;
+    display: flex;
+    width: fit-content;
+}
+
+.CardInside {
+    background-color: #FFC654;
+    border-radius: 17px;
+    margin: 17px;
+    padding: 10px;
+}

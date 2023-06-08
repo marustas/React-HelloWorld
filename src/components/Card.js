@@ -1,13 +1,15 @@
 import React from 'react';
-
-const Card = ({name,id,email}) =>{
-    return(
-        <div className= 'tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-            <img  alt='Robot' src={`https://robohash.org/${id}`}/>
+import "./Card.css";
+const Card = ({ name, id, email }) => {
+    return (
+        <div className='Card dib shadow-5 grow'>
+            <div className='CardInside'>
                 <div>
                     <h2>{name}</h2>
+                    <img alt='Card' src={`https://robohash.org/${id}`} />
                     <p>{email}</p>
                 </div>
+            </div>
         </div>
     );
 }
