@@ -1,13 +1,12 @@
 import React from 'react';
 import "./Card.css";
-const Card = ({ name, id, email }) => {
+const Card = ({ name, id, description }) => {
     return (
         <div className='Card dib shadow-5 grow'>
             <div className='CardInside'>
                 <div>
                     <h2>{name}</h2>
-                    <img alt='Card' src={`template.jpg`} />
-                    <p>{email}</p>
+                    <p>{description}</p>
                 </div>
             </div>
         </div>
