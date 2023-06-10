@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-HelloWorld/static/css/main.8ac506b3.css",
-    "main.js": "/React-HelloWorld/static/js/main.707378b7.js",
+    "main.css": "/React-HelloWorld/static/css/main.f54c32ad.css",
+    "main.js": "/React-HelloWorld/static/js/main.d4d802b8.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-HelloWorld/static/js/787.28cb0dcd.chunk.js",
     "static/media/Munchkin.ttf": "/React-HelloWorld/static/media/Munchkin.88e9e4355e007fe389dd.ttf",
     "index.html": "/React-HelloWorld/index.html",
-    "main.8ac506b3.css.map": "/React-HelloWorld/static/css/main.8ac506b3.css.map",
-    "main.707378b7.js.map": "/React-HelloWorld/static/js/main.707378b7.js.map",
+    "main.f54c32ad.css.map": "/React-HelloWorld/static/css/main.f54c32ad.css.map",
+    "main.d4d802b8.js.map": "/React-HelloWorld/static/js/main.d4d802b8.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-HelloWorld/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ac506b3.css",
-    "static/js/main.707378b7.js"
+    "static/css/main.f54c32ad.css",
+    "static/js/main.d4d802b8.js"
   ]
 }
