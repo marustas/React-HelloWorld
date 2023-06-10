@@ -8,6 +8,7 @@ const CardList = ({ treasures }) => {
                     return (<Card
                         key={i}
                         id={treasures[i].id}
+                        bonus = {treasures[i].bonus}
                         name={treasures[i].name}
                         description={treasures[i].description}
                     />

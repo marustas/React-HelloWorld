@@ -1,13 +1,12 @@
 import React from 'react';
 import "./Card.css";
-const Card = ({ name, id, description }) => {
+const Card = ({ name, id, description,bonus }) => {
     return (
-        <div className='Card dib shadow-5 grow'>
-            <div className='CardInside'>
-                <div>
-                    <h2>{name}</h2>
-                    <p>{description}</p>
-                </div>
+        <div className='Card tc'>
+            <h3>{bonus}</h3>
+            <div>
+            <h2>{name}</h2>
+            <p>{description}</p>
             </div>
         </div>
     );
