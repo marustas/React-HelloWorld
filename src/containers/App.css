@@ -2,7 +2,7 @@
     font-family: 'Munchkin';
     font-style: normal;
     font-weight: normal;
-    src: local('Munchkin'), url('Munchkin.ttf') format('ttf');
+    src: url('Munchkin.ttf') format('ttf');
 }
 
 h1,
