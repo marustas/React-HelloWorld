@@ -8,7 +8,6 @@ import { treasures } from "./treasures";
 
 // class sytax for SMART components with STATE
 class App extends React.Component {
-    //Making a STATE instead of PROPS
     constructor() {
         super()
         this.state = {
@@ -21,7 +20,7 @@ class App extends React.Component {
     }
     render() {
         const { treasures, searchfield } = this.state;
-        const filteredRobots = treasures.filter(treasure => {
+        const filteredCards = treasures.filter(treasure => {
             return treasure.id.toLowerCase().includes(searchfield.toLowerCase())
         })
         return !treasures.length ?
@@ -32,7 +31,7 @@ class App extends React.Component {
                     <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
                         <ErrorBoundary>
-                            <CardList treasures={filteredRobots} />
+                            <CardList treasures={filteredCards} />
                         </ErrorBoundary>
                     </Scroll>
                 </div>
