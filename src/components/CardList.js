@@ -11,6 +11,8 @@ const CardList = ({ treasures }) => {
                         bonus = {treasures[i].bonus}
                         name={treasures[i].name}
                         description={treasures[i].description}
+                        levels={treasures[i].levels}
+                        treasures={treasures[i].treasures}
                     />
                     );
                 }
