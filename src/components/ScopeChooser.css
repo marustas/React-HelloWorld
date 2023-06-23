@@ -1,6 +1,29 @@
-.Btn {
-    width: 120px;
-    height: 40px;
+.BtnDoor {
+    width: 150px;
+    height: 100px;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
+    background: url('doors_back.jpg') no-repeat;
+    background-size: 150px;
+    border: none;
+    border-radius: 8px;
+}
+
+.BtnTreasure {
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    margin: 5px;
+    background: url('treasures_back.jpg') no-repeat;
+    background-size: 150px;
+    border: none;
+    border-radius: 8px;
+}
+
+.BtnTreasure:hover {
+    transform: scale(1.1);
+}
+
+.BtnDoor:hover {
+    transform: scale(1.1);
 }

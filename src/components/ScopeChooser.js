@@ -4,8 +4,8 @@ const ScopeChooser = ({onScopeChange}) => {
     //add state, since some cards differ
     return (
         <div>
-<button className='Btn' onClick={() => onScopeChange('doors')}>Doors</button>
-<button className='Btn' onClick={() => onScopeChange('treasures')}>Treasures</button>
+<button className='BtnDoor' onClick={() => onScopeChange('doors')}></button>
+<button className='BtnTreasure' onClick={() => onScopeChange('treasures')}></button>
         </div>
     );
 }
