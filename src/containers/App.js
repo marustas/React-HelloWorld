@@ -3,8 +3,10 @@ import CardList from "../components/CardList";
 import Scroll from "../components/Scroll";
 import SearchBox from "../components/SearchBox";
 import ErrorBoundary from "../components/ErrorBoundary";
+import ScopeChooser from "../components/ScopeChooser";
 import "./App.css";
 import { treasures } from "./treasures";
+import { doors } from "./doors";
 
 // class sytax for SMART components with STATE
 class App extends React.Component {
@@ -12,28 +14,53 @@ class App extends React.Component {
         super()
         this.state = {
             treasures: treasures,
-            searchfield: ''
+            doors: doors,
+            searchfield: '',
+            scope: ''
         }
     }
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
     }
+    onScopeChange = (scope) => {
+        this.setState({ scope: scope })
+    }
     render() {
-        const { treasures, searchfield } = this.state;
-        const filteredCards = treasures.filter(treasure => {
+        const { treasures, searchfield, scope, doors } = this.state;
+        const filteredTreasures= treasures.filter(treasure => {
             return treasure.id.toLowerCase().includes(searchfield.toLowerCase())
         })
+        const filteredDoors= doors.filter(door=> {
+            return door.id.toLowerCase().includes(searchfield.toLowerCase())
+        })
+
         return !treasures.length ?
             <h1>Loading</h1> :
             (
                 <div className='tc'>
                     <h1 className="f1">MunchkinCards </h1>
                     <SearchBox searchChange={this.onSearchChange} />
-                    <Scroll>
-                        <ErrorBoundary>
-                            <CardList treasures={filteredCards} />
-                        </ErrorBoundary>
-                    </Scroll>
+                    <ScopeChooser onScopeChange={this.onScopeChange} />
+                    {scope === 'doors' ?
+                        <div>
+                            <Scroll>
+                                <ErrorBoundary>
+                                    <CardList cards={filteredDoors} />
+                                </ErrorBoundary>
+                            </Scroll>
+                        </div>
+                        : (scope === 'treasures' ?
+                            <Scroll>
+                                <ErrorBoundary>
+                                    <CardList cards={filteredTreasures} />
+                                </ErrorBoundary>
+                            </Scroll>
+                            : <Scroll>
+                                <ErrorBoundary>
+                                </ErrorBoundary>
+                            </Scroll>
+                        )
+                    }
                 </div>
             );
     }

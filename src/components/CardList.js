@@ -1,18 +1,18 @@
 import React from "react";
 import Card from "./Card";
-const CardList = ({ treasures }) => {
+const CardList = ({ cards }) => {
     return (
         <div>
             {
-                treasures.map((user, i) => {
+                cards.map((user, i) => {
                     return (<Card
                         key={i}
-                        id={treasures[i].id}
-                        bonus = {treasures[i].bonus}
-                        name={treasures[i].name}
-                        description={treasures[i].description}
-                        levels={treasures[i].levels}
-                        treasures={treasures[i].treasures}
+                        id={cards[i].id}
+                        bonus = {cards[i].bonus}
+                        name={cards[i].name}
+                        description={cards[i].description}
+                        levels={cards[i].levels}
+                        treasures={cards[i].treasures}
                     />
                     );
                 }
