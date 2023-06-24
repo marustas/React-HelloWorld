@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./Card";
 import Door from "./Door";
+import Treasure from "./Treasure";
 const CardList = ({ cards, scope }) => {
     return (
         <div>
@@ -20,7 +20,7 @@ const CardList = ({ cards, scope }) => {
                     )
                     : (scope === 'treasures' ?
                         cards.map((user, i) => {
-                            return (<Card
+                            return (<Treasure
                                 key={i}
                                 id={cards[i].id}
                                 bonus={cards[i].bonus}

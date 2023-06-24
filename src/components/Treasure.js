@@ -1,8 +1,8 @@
 import React from 'react';
-import "./Card.css";
-const Card = ({ name, id, description, bonus}) => {
+import "./Treasure.css";
+const Treasure = ({ name, id, description, bonus}) => {
     return (
-        <div className='Card tc'>
+        <div className='Treasure tc'>
             <h3>{bonus}</h3>
             <div>
                 <h2>{name}</h2>
@@ -11,4 +11,4 @@ const Card = ({ name, id, description, bonus}) => {
         </div>
     );
 }
-export default Card;
+export default Treasure;
