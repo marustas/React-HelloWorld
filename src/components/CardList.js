@@ -1,6 +1,6 @@
 import React from "react";
-import Door from "./Door";
-import Treasure from "./Treasure";
+import Door from "./Door/Door";
+import Treasure from "./Treasure/Treasure";
 const CardList = ({ cards, scope }) => {
     return (
         <div>

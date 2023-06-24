@@ -3,10 +3,10 @@ import CardList from "../components/CardList";
 import Scroll from "../components/Scroll";
 import SearchBox from "../components/SearchBox";
 import ErrorBoundary from "../components/ErrorBoundary";
-import ScopeChooser from "../components/ScopeChooser";
+import ScopeChooser from "../components/ScopeChooser/ScopeChooser";
 import "./App.css";
-import { treasures } from "./treasures";
-import { doors } from "./doors";
+import { treasures } from "./CardSet/treasures";
+import { doors } from "./CardSet/doors";
 
 // class sytax for SMART components with STATE
 class App extends React.Component {
