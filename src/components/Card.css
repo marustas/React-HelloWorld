@@ -11,10 +11,3 @@
     width: 270px;
     font-size: 11pt;
 }
-
-.Desc-Bottom {
-    display: flex;
-    margin-top: 27vh;
-    justify-content: space-between;
-    padding: 5px;
-}

@@ -11,8 +11,10 @@ const CardList = ({ cards }) => {
                         bonus = {cards[i].bonus}
                         name={cards[i].name}
                         description={cards[i].description}
+                        bad={cards[i].bad}
                         levels={cards[i].levels}
                         treasures={cards[i].treasures}
+                        power={cards[i].power}
                     />
                     );
                 }
