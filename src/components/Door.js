@@ -1,13 +1,14 @@
 import React from 'react';
-import "./Card.css";
-const Card = ({ name, id, description, bonus}) => {
+import "./Door.css";
+const Card = ({ name, id, description, level, bad }) => {
     return (
-        <div className='Card tc'>
-            <h3>{bonus}</h3>
+        <div className='Door tc'>
+            <h3>{level}</h3>
             <div>
                 <h2>{name}</h2>
                 <p>{description}</p>
             </div>
+            <p>{bad}</p>
         </div>
     );
 }

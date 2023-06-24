@@ -45,14 +45,14 @@ class App extends React.Component {
                         <div>
                             <Scroll>
                                 <ErrorBoundary>
-                                    <CardList cards={filteredDoors} />
+                                    <CardList scope ={scope} cards={filteredDoors} />
                                 </ErrorBoundary>
                             </Scroll>
                         </div>
                         : (scope === 'treasures' ?
                             <Scroll>
                                 <ErrorBoundary>
-                                    <CardList cards={filteredTreasures} />
+                                    <CardList scope = {scope} cards={filteredTreasures} />
                                 </ErrorBoundary>
                             </Scroll>
                             : <Scroll>

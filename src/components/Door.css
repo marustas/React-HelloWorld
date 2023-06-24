@@ -1,0 +1,13 @@
+.Door {
+    background-color: #E7DAA7;
+    border-color: #4A1915;
+    border-radius: 17px;
+    border-style: solid;
+    border-width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 380px;
+    margin: 20px;
+    width: 270px;
+    font-size: 11pt;
+}
