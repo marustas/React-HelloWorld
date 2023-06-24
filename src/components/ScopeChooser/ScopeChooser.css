@@ -1,21 +1,21 @@
 .BtnDoor {
-    width: 150px;
+    width: 120px;
     height: 100px;
     align-items: center;
     margin: 5px;
     background: url('doors_back.jpg') no-repeat;
-    background-size: 150px;
+    background-size: 120px;
     border: none;
     border-radius: 8px;
 }
 
 .BtnTreasure {
-    width: 150px;
+    width: 120px;
     height: 100px;
     align-items: center;
     margin: 5px;
     background: url('treasures_back.jpg') no-repeat;
-    background-size: 150px;
+    background-size: 120px;
     border: none;
     border-radius: 8px;
 }
