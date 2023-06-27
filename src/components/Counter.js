@@ -33,13 +33,11 @@ const Counter = () => {
                 <h1>{power}</h1>
             </div>
             <div className='BottomStats'>
-            <div className='di mr4'>
+            <div className='mr4'>
                 <h3>Level</h3>
                 <div>
                 <button className='arrow-down' onClick={handleLevelDecrement}></button>
-                </div>
                 <h1>{level}</h1>
-                <div>
                 <button className='arrow-up' onClick={handleLevelIncrement}></button>
                 </div>
             </div>
