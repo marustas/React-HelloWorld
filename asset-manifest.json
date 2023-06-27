@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/React-HelloWorld/static/css/main.6840f104.css",
-    "main.js": "/React-HelloWorld/static/js/main.4e65628c.js",
+    "main.css": "/React-HelloWorld/static/css/main.40eb37d3.css",
+    "main.js": "/React-HelloWorld/static/js/main.38b92cff.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-HelloWorld/static/js/787.28cb0dcd.chunk.js",
     "static/media/treasures_back.jpg": "/React-HelloWorld/static/media/treasures_back.ad8b476f8018dbcb0ba1.jpg",
     "static/media/doors_back.jpg": "/React-HelloWorld/static/media/doors_back.46ddc633dea4b830b9d0.jpg",
     "static/media/Munchkin.ttf": "/React-HelloWorld/static/media/Munchkin.88e9e4355e007fe389dd.ttf",
     "index.html": "/React-HelloWorld/index.html",
-    "main.6840f104.css.map": "/React-HelloWorld/static/css/main.6840f104.css.map",
-    "main.4e65628c.js.map": "/React-HelloWorld/static/js/main.4e65628c.js.map",
+    "main.40eb37d3.css.map": "/React-HelloWorld/static/css/main.40eb37d3.css.map",
+    "main.38b92cff.js.map": "/React-HelloWorld/static/js/main.38b92cff.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-HelloWorld/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6840f104.css",
-    "static/js/main.4e65628c.js"
+    "static/css/main.40eb37d3.css",
+    "static/js/main.38b92cff.js"
   ]
 }
