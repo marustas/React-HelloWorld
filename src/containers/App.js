@@ -4,6 +4,7 @@ import Scroll from "../components/Scroll";
 import SearchBox from "../components/SearchBox";
 import ErrorBoundary from "../components/ErrorBoundary";
 import ScopeChooser from "../components/ScopeChooser/ScopeChooser";
+import Counter from "../components/Counter";
 import "./App.css";
 import { treasures } from "./CardSet/treasures";
 import { doors } from "./CardSet/doors";
@@ -40,6 +41,7 @@ class App extends React.Component {
                 <div className='tc'>
                     <h1 className="f1">MunchkinCards </h1>
                     <SearchBox searchChange={this.onSearchChange} />
+                    <Counter />
                     <ScopeChooser onScopeChange={this.onScopeChange} />
                     {scope === 'doors' ?
                         <div>

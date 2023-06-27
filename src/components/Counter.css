@@ -1,0 +1,32 @@
+.BottomStats {
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.arrow-up {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    background-color: #FCD395;
+}
+
+.arrow-down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: #FCD395;
+}
+
+.di {
+    display: inline;
+}
