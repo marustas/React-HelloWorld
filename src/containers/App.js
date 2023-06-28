@@ -4,7 +4,7 @@ import Scroll from "../components/Scroll";
 import SearchBox from "../components/SearchBox";
 import ErrorBoundary from "../components/ErrorBoundary";
 import ScopeChooser from "../components/ScopeChooser/ScopeChooser";
-import Counter from "../components/Counter";
+import Counter from "../components/Counter/Counter";
 import "./App.css";
 import { treasures } from "./CardSet/treasures";
 import { doors } from "./CardSet/doors";
