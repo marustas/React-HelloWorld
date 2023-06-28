@@ -5,7 +5,9 @@ const Counter = () => {
     const [gear, setGear] = useState(0);
 
     const handleLevelIncrement = () => {
-        setLevel(level + 1);
+        if(level < 10){
+            setLevel(level + 1);
+        }
     };
 
     const handleLevelDecrement = () => {
