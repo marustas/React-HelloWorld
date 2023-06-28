@@ -3,9 +3,9 @@ import './Counter.css'
 const Counter = () => {
     const [level, setLevel] = useState(1);
     const [gear, setGear] = useState(0);
-
+    
     const handleLevelIncrement = () => {
-        if(level < 10){
+        if (level < 10) {
             setLevel(level + 1);
         }
     };
@@ -21,7 +21,7 @@ const Counter = () => {
     };
 
     const handleGearDecrement = () => {
-            setGear(gear - 1);
+        setGear(gear - 1);
     };
 
     const power = level + gear;
@@ -33,20 +33,20 @@ const Counter = () => {
                 <h1>{power}</h1>
             </div>
             <div className='BottomStats'>
-            <div className='mr4'>
-                <h3>Level</h3>
-                <div>
-                <button className='arrow-down' onClick={handleLevelDecrement}></button>
-                <h1>{level}</h1>
-                <button className='arrow-up' onClick={handleLevelIncrement}></button>
+                <div className='mr4'>
+                    <h3>Level</h3>
+                    <div>
+                        <button className={level === 1 ? 'arrow-down-limit': 'arrow-down'} onClick={handleLevelDecrement}></button>
+                        <h1>{level}</h1>
+                        <button className={level === 10 ? 'arrow-up-limit': 'arrow-up'} onClick={handleLevelIncrement}></button>
+                    </div>
                 </div>
-            </div>
-            <div className='di ml4'>
-                <h3>Gear</h3>
-                <button className='arrow-down' onClick={handleGearDecrement}></button>
-                <h1>{gear}</h1>
-                <button className='arrow-up' onClick={handleGearIncrement}></button>
-            </div>
+                <div className='di ml4'>
+                    <h3>Gear</h3>
+                    <button className='arrow-down' onClick={handleGearDecrement}></button>
+                    <h1>{gear}</h1>
+                    <button className='arrow-up' onClick={handleGearIncrement}></button>
+                </div>
             </div>
         </div>
     );

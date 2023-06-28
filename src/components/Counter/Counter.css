@@ -26,3 +26,25 @@
     -webkit-transform: rotate(45deg);
     background-color: #FCD395;
 }
+
+.arrow-up-limit {
+    border: solid rgb(161, 159, 159);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    background-color: #FCD395;
+}
+
+.arrow-down-limit {
+    border: solid rgb(161, 159, 159);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: #FCD395;
+}
