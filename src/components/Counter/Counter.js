@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import './Counter.css'
+import './Counter.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSkull } from '@fortawesome/free-solid-svg-icons';
+
 const Counter = () => {
     const [level, setLevel] = useState(1);
     const [gear, setGear] = useState(0);
-    
+
     const handleLevelIncrement = () => {
         if (level < 10) {
             setLevel(level + 1);
@@ -24,6 +27,10 @@ const Counter = () => {
         setGear(gear - 1);
     };
 
+    const handleResetGear = () => {
+        setGear(0);
+      };
+
     const power = level + gear;
 
     return (
@@ -32,6 +39,11 @@ const Counter = () => {
                 <h3>Power</h3>
                 <h1>{power}</h1>
             </div>
+            <div>
+        <button className="Death" onClick={handleResetGear}>
+          <FontAwesomeIcon className='pa0 h2' icon={faSkull} />
+        </button>
+      </div>
             <div className='BottomStats'>
                 <div className='mr4'>
                     <h3>Level</h3>

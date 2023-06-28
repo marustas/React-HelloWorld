@@ -48,3 +48,9 @@
     -webkit-transform: rotate(45deg);
     background-color: #FCD395;
 }
+
+.Death {
+    color: #84482e;
+    background-color: #FCD395;
+    border: none;
+}
