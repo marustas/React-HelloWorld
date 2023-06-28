@@ -50,16 +50,17 @@ const Counter = () => {
                 <div className='mr4'>
                     <h3>Level</h3>
                     <div>
-                        <button className={level === 1 ? 'arrow-down-limit' : 'arrow-down'} onClick={handleLevelDecrement}></button>
+                    <button className={level === 10 ? 'arrow-up-limit' : 'arrow-up'} onClick={handleLevelIncrement}></button>
                         <h1>{level}</h1>
-                        <button className={level === 10 ? 'arrow-up-limit' : 'arrow-up'} onClick={handleLevelIncrement}></button>
+                        <button className={level === 1 ? 'arrow-down-limit' : 'arrow-down'} onClick={handleLevelDecrement}></button>
+
                     </div>
                 </div>
                 <div className='di ml4'>
                     <h3>Gear</h3>
-                    <button className='arrow-down' onClick={handleGearDecrement}></button>
-                    <h1>{gear}</h1>
                     <button className='arrow-up' onClick={handleGearIncrement}></button>
+                    <h1>{gear}</h1>
+                    <button className='arrow-down' onClick={handleGearDecrement}></button>
                 </div>
             </div>
         </div>
