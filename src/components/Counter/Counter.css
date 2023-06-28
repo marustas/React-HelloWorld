@@ -53,4 +53,11 @@
     color: #84482e;
     background-color: #FCD395;
     border: none;
+    float: right;
+}
+
+.Inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

@@ -29,28 +29,30 @@ const Counter = () => {
 
     const handleResetGear = () => {
         setGear(0);
-      };
+    };
 
     const power = level + gear;
 
     return (
         <div>
+                <div className='Inline'>
+                    <div className='mr4'>
+                    <h3>Power</h3>
+                    <h1>{power}</h1>
+                    </div>
+                    <button className="Death" onClick={handleResetGear}>
+                        <FontAwesomeIcon className='pa0 h2' icon={faSkull} />
+                    </button>
+                </div>
             <div>
-                <h3>Power</h3>
-                <h1>{power}</h1>
             </div>
-            <div>
-        <button className="Death" onClick={handleResetGear}>
-          <FontAwesomeIcon className='pa0 h2' icon={faSkull} />
-        </button>
-      </div>
             <div className='BottomStats'>
                 <div className='mr4'>
                     <h3>Level</h3>
                     <div>
-                        <button className={level === 1 ? 'arrow-down-limit': 'arrow-down'} onClick={handleLevelDecrement}></button>
+                        <button className={level === 1 ? 'arrow-down-limit' : 'arrow-down'} onClick={handleLevelDecrement}></button>
                         <h1>{level}</h1>
-                        <button className={level === 10 ? 'arrow-up-limit': 'arrow-up'} onClick={handleLevelIncrement}></button>
+                        <button className={level === 10 ? 'arrow-up-limit' : 'arrow-up'} onClick={handleLevelIncrement}></button>
                     </div>
                 </div>
                 <div className='di ml4'>
