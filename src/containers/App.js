@@ -28,10 +28,10 @@ class App extends React.Component {
     }
     render() {
         const { treasures, searchfield, scope, doors } = this.state;
-        const filteredTreasures= treasures.filter(treasure => {
+        const filteredTreasures = treasures.filter(treasure => {
             return treasure.id.toLowerCase().includes(searchfield.toLowerCase())
         })
-        const filteredDoors= doors.filter(door=> {
+        const filteredDoors = doors.filter(door => {
             return door.id.toLowerCase().includes(searchfield.toLowerCase())
         })
 
@@ -40,21 +40,21 @@ class App extends React.Component {
             (
                 <div className='tc'>
                     <h1 className="f1">MunchkinCards </h1>
-                    <SearchBox searchChange={this.onSearchChange} />
+                    <SearchBox searchChange = {this.onSearchChange} />
                     <Counter />
-                    <ScopeChooser onScopeChange={this.onScopeChange} />
+                    <ScopeChooser onScopeChange = {this.onScopeChange} />
                     {scope === 'doors' ?
                         <div>
                             <Scroll>
                                 <ErrorBoundary>
-                                    <CardList scope ={scope} cards={filteredDoors} />
+                                    <CardList scope={scope} cards={filteredDoors} />
                                 </ErrorBoundary>
                             </Scroll>
                         </div>
                         : (scope === 'treasures' ?
                             <Scroll>
                                 <ErrorBoundary>
-                                    <CardList scope = {scope} cards={filteredTreasures} />
+                                    <CardList scope={scope} cards={filteredTreasures} />
                                 </ErrorBoundary>
                             </Scroll>
                             : <Scroll>
