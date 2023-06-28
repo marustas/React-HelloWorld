@@ -21,9 +21,7 @@ const Counter = () => {
     };
 
     const handleGearDecrement = () => {
-        if (gear > 0) {
             setGear(gear - 1);
-        }
     };
 
     const power = level + gear;
