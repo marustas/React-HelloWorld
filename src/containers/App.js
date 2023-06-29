@@ -9,7 +9,6 @@ import "./App.css";
 import { treasures } from "./CardSet/treasures";
 import { doors } from "./CardSet/doors";
 
-// class sytax for SMART components with STATE
 class App extends React.Component {
     constructor() {
         super()
