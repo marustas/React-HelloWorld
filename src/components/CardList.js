@@ -14,6 +14,7 @@ const CardList = ({ cards, scope }) => {
                             description={cards[i].description}
                             bad={cards[i].bad}
                             level={cards[i].level}
+                            bonus ={cards[i].bonus}
                         />
                         );
                     }
