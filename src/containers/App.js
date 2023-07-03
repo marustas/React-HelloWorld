@@ -39,9 +39,9 @@ class App extends React.Component {
             (
                 <div className='tc'>
                     <h1 className="f1">MunchkinCards </h1>
-                    <SearchBox searchChange = {this.onSearchChange} />
+                    <SearchBox searchChange={this.onSearchChange} />
                     <Counter />
-                    <ScopeChooser onScopeChange = {this.onScopeChange} />
+                    <ScopeChooser onScopeChange={this.onScopeChange} />
                     {scope === 'doors' ?
                         <div>
                             <Scroll>
